@@ -1,0 +1,155 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	color: #BDBDBD;
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+
+.hero h1 {
+	font-size: 48px;
+	font-weight: 800;
+	color: white;
+	margin-bottom: 0;
+	padding: 100px 20px;
+}
+
+p {
+	font-weight: 300;
+}
+
+.hero {
+	text-align: center;
+	background-color: lightgreen;
+	background-image: url(../images/hero1.jpg);
+	background-size: cover;
+	padding: 100px 100px;
+}
+
+
+nav {
+	background-color: black;
+	text-align: center;
+	padding: 30px;
+
+
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+}
+
+nav li {
+	margin-top: 40px;
+}
+
+.feature {
+	background-color: lightgreen;
+	text-align: center;
+	padding: 30px; 
+	color: white;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content:  space-between;
+	flex-wrap: wrap;
+}
+
+.box {
+	flex-grow: 0;
+	flex-basis: 33.33%;
+	padding: 20px;
+}
+
+.box img {
+	height: 50px;
+	width: auto;
+}
+
+@media (max-width: 700px) {
+	.box {
+		flex-basis: 100%;
+	}
+}
+
+
+.media {
+	padding: 30px 0;
+}
+
+.media-left {
+	flex-basis: 40%;
+	padding-right: 30px;
+}
+
+.media-right {
+	flex-basis: 60%;
+}
+
+.media-right img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 400px) {
+	.media-left, .media-right {
+		flex-basis: 100%;
+	}
+}
+
+
+.review {
+	text-align: center;
+	padding: 50px;
+}
+
+
+.author {
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+	padding: 0 30px;
+}
+
+.author img {
+float: left;
+width: 100px;
+border-radius: 50%;
+margin-right: 20px;
+}
+
+
+.author h2 {
+	margin-top: 40px;
+}
+
+
+.footer {
+	text-align: center;
+	padding: 30px 0;
+
+
